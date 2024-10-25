@@ -109,10 +109,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form h2 {
-    color: #2c5741;
-}
-
 label {
     display: block;
     margin-bottom: 8px;
