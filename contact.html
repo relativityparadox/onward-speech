@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Onward</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header-placeholder"></div>
+<div class="content">
+  <h2>Global speech support, local time.</h2>
+
+    <div class="contact-form-container">
+        <form action="#" method="post">
+            <h2>Contact Us</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service">
+                <option value="speech-therapy">Speech Therapy</option>
+                <option value="assessment">Assessment</option>
+                <option value="consultation">Consultation</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                Subscribe to our newsletter
+            </label>
+
+            <input type="submit" value="Submit">
+
+            <p class="info-notice">
+              This form is a mock-up and does not store or send your information. It is intended for demonstration purposes only.
+            </p>
+            <p class="success-notice" style="display: none;">
+              Thank you! Your message has been successfully sent.
+            </p>
+        </form>
+    </div>
+  <div id="footer-placeholder"></div>
+</div>
+  <script src="assets/script.js"></script>
+  <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.querySelector('.success-notice').style.display = 'block'; // Show success notice
+  </script>
+</body>
+</html>
