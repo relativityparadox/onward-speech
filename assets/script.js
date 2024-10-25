@@ -7,5 +7,5 @@ function loadHTML(elementId, filePath) {
 }
 
 // Load the header and footer
-loadHTML('header-placeholder', 'header.html');
-loadHTML('footer-placeholder', 'footer.html');
+loadHTML('header-placeholder', 'assets/header.html');
+loadHTML('footer-placeholder', 'assets/footer.html');
